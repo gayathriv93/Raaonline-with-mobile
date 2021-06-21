@@ -124,10 +124,13 @@ body {
 
 .main-categeory-item {
     height: 80px;
-    width: 340px;
+    width: 100%;
     background-color: rgb(225, 246, 255);
     margin: 10px;
     /* border: 1px solid green; */
+}
+.mob-container {
+    margin: 10px;
 }
 
 .main-categeory-item>img {
@@ -146,6 +149,7 @@ body {
 
 .category-item-container {
     flex-direction: column;
+    align-items: center;
     /* padding-left: 5px; */
 }
 
@@ -168,7 +172,7 @@ img.slide-img {
     width: 300px;
     background-color: white;
     border: none;
-    margin: 10px;
+    margin: auto;
     padding-bottom: 30px;
 }
 
@@ -180,7 +184,7 @@ img.slide-img {
 }
 
 h2 {
-    padding: 0px 10px;
+    padding: 0px 8px;
 }
 
 h4 {
@@ -231,7 +235,9 @@ button.view-button {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 5px;
+    /* padding-top: 10px; */
+    align-items: center;
+    /* justify-content: center; */
 }
 
 .doc-photo {
@@ -269,7 +275,7 @@ span.doc-name {
 
 .dnb-content {
     color: white;
-    font-size: 10px;
+    font-size: 1rem;
     padding-bottom: 10px;
 }
 
@@ -303,7 +309,7 @@ section a {
     text-decoration: none;
     color: white;
     padding: 7px;
-    font-size: small;
+    font-size: 0.8rem;
 }
 
 section a:hover {
@@ -331,7 +337,7 @@ section a:hover {
     flex-direction: column;
     padding-top: 30px;
     justify-content: space-between;
-    font-size: x-small;
+    font-size: small;
 }
 
 /* FOr big screens */
@@ -361,6 +367,12 @@ section a:hover {
     .banner-text h1 {
         font-size: 4rem;
     }
+    .main-categeory-item {
+        width: 31%;
+    }
+    .mob-container {
+        margin: 0px;
+    }
     .category-item-container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -370,7 +382,9 @@ section a:hover {
         display: block;
     }
     /* style for featured packages */
-    
+    .package-container {
+        margin: 0px;
+    }
     .container-color {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -392,11 +406,14 @@ section a:hover {
     }
     .testimonal-part {
         height: 500px;
+        /* width: 100%; */
     }
+
     .doc-details {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: auto;
     }
     /* testimonal ends here */
 
