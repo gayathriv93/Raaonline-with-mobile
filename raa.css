@@ -124,7 +124,7 @@ body {
 
 .main-categeory-item {
     height: 80px;
-    width: 350px;
+    width: 340px;
     background-color: rgb(225, 246, 255);
     margin: 10px;
     /* border: 1px solid green; */
@@ -146,6 +146,7 @@ body {
 
 .category-item-container {
     flex-direction: column;
+    /* padding-left: 5px; */
 }
 
 img.slide-img {
@@ -155,28 +156,31 @@ img.slide-img {
 /* Featured package image */
 
 .container-color {
-    margin: 10px;
-    background-color: white;
+    padding: 10px;
+    background-color: rgb(225, 246, 255);
+    padding-bottom: 20px;
 }
 
 .package-container {
     border: 1px solid black;
     border-radius: 5px;
-    height: 370px;
+    height: 360px;
     width: 300px;
     background-color: white;
     border: none;
+    margin: 10px;
+    padding-bottom: 30px;
 }
 
 .package-container>img {
     width: 100%;
-    height: 180px;
+    height: 170px;
     border-radius: 5px;
     overflow: hidden;
 }
 
 h2 {
-    padding: 3px 10px;
+    padding: 0px 10px;
 }
 
 h4 {
@@ -189,9 +193,9 @@ button.view-button {
     background-color: var(--primary-color);
     border-radius: 5px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
     border: none;
-    margin: 5px 90px;
+    margin: 0px 90px;
 }
 
 /* Featured package image ends */
@@ -226,8 +230,8 @@ button.view-button {
 .testimonal-part {
     display: flex;
     flex-direction: column;
-    width: 31%;
-    margin: 15px;
+    width: 100%;
+    margin: 5px;
 }
 
 .doc-photo {
@@ -254,66 +258,80 @@ span.doc-name {
     flex-direction: column;
     background-color: rgb(0, 149, 212);
     padding-top: 0px;
+    padding: 10px;
+    /* margin: 10px; */
 }
 
 .h1-style {
     color: white;
-    font-size: 35px;
+    font-size: 20px;
 }
 
 .dnb-content {
     color: white;
+    font-size: 10px;
     padding-bottom: 10px;
 }
 
 .pkg-btn {
     border-radius: 5px;
     color: rgb(0, 149, 212);
-    padding: 10px;
+    padding: 5px;
     border: none;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: bold;
+    margin: 5px;
 }
 
 /* Anesthesia package ends here */
+
 /* Footer */
-footer  {
+
+footer {
     background-color: black;
     color: white;
+    padding: 10px;
 }
+
 .footer-class {
     display: flex;
     flex-direction: column;
-justify-content: space-between;
+    justify-content: space-between;
 }
+
 section a {
     text-decoration: none;
     color: white;
     padding: 7px;
+    font-size: small;
 }
+
 section a:hover {
     text-decoration: underline;
 }
+
 .foot-div {
-    padding-top: 10px;
+    padding: 10px;
 }
+
 .right-footer {
     display: flex;
-    flex-direction: column;
-    
 }
-.right-footer >img{
+
+.right-footer>img {
     width: 40%;
 }
 
 .left-footer {
     width: 100%;
 }
+
 .bottom {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
     justify-content: space-between;
+    font-size: x-small;
 }
 
 /* FOr big screens */
@@ -352,16 +370,19 @@ section a:hover {
         display: block;
     }
     /* style for featured packages */
+    
     .container-color {
         padding-top: 30px;
         padding-bottom: 30px;
         background-color: rgb(225, 246, 255);
     }
     /* Featured package video */
+
     .media-container {
         margin: 0px;
     }
     /* testimonal */
+
     .testimonal {
         flex-direction: row;
     }
@@ -378,19 +399,40 @@ section a:hover {
         align-items: center;
     }
     /* testimonal ends here */
+
     /* Anesthesia DNB Package */
+
     .dnb-package {
         flex-direction: row;
+        margin: 0px;
+    }
+    .pkg-btn {
+        padding: 10px;
+        font-size: 20px;
+    }
+    .dnb-content {
+        font-size: 20px;
+    }
+    .h1-style {
+        font-size: 35px;
     }
     /* footer */
-    .footer-class,.bottom  {
+    .footer-class, .bottom {
         flex-direction: row;
+    }
+    section a {
+        font-size: 1rem;
     }
     .left-footer {
         width: 60%;
     }
-    .right-footer >img{
+    .right-footer {
+        flex-direction: column;
+    }
+    .right-footer>img {
         width: 100%;
     }
-   
+    .bottom {
+        font-size: small;
+    }
 }
